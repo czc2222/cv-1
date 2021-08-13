@@ -10,7 +10,7 @@ let string =`
     height:300px;
     box-shadow:0 0 3px rgba(0,0,0,.5);
     border-radius:50%;
-    left:50%;
+    
 }
 /*接下来我让让圆变成阴阳两色
  *然后让这个圆变成阴阳交汇
@@ -69,7 +69,7 @@ let word = ()=>{
             word() ;//循环执行
         }
         
-    },50)
+    },10)
     
 }
 word()
