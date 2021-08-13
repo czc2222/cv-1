@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>我的简历</title>
+</head>
+
+<body>
+
+    <div id="html"></div>
+    <div id="circle"></div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        #html {
+            word-break: break-all;
+        }
+
+        #circle {
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+
+        #circle::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #circle::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media (max-width:500px) {
+           
+           #circle {
+            height:50vh;
+            position: relative;
+            top: 0;
+            right: 0;
+           
+           margin:0 auto;
+           
+           
+           }
+           #html {
+               height:50vh;
+               overflow: auto;
+           }
+
+        }
+    </style>
+    <style id="style"></style>
+    <script src="index.js"> </script>
+</body>
+
+</html>
