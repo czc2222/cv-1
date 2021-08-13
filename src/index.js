@@ -2,20 +2,20 @@ let html = document.querySelector("#html");/* 通过css选择器找到这个html
 let style =document.querySelector("#style")
 let string =`
 /* 你好，我是一名前端新人
-接下来我要弄一个阴阳图
-先画一个圆
-*/
+ *接下来我要弄一个阴阳图
+ *先画一个圆
+**/
 #circle {
-width:300px;
-height:300px;
-box-shadow:0 0 3px rgba(0,0,0,.5);
-border-radius:50%;
-left:50%;
+    width:300px;
+    height:300px;
+    box-shadow:0 0 3px rgba(0,0,0,.5);
+    border-radius:50%;
+    left:50%;
 }
 /*接下来我让让圆变成阴阳两色
  *然后让这个圆变成阴阳交汇
  *最后在里面绘制阴阳眼
- */
+**/
 #circle {
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
 }
@@ -36,9 +36,7 @@ left:50%;
     background:white;
     border-radius:50%;
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
-}
-
-`//加上注释让文字不会影响到body的样式
+}`//加上注释让文字不会影响到body的样式
 let string2=''//让string2等于一个空字符串
 let n = 0 //初始化n的值，下标为0
 
