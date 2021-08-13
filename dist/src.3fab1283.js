@@ -106,7 +106,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"index.js":[function(require,module,exports) {
 var html = document.querySelector("#html"); /* 通过css选择器找到这个html */
 var style = document.querySelector("#style");
-var string = "\n/* \u4F60\u597D\uFF0C\u6211\u662F\u4E00\u540D\u524D\u7AEF\u65B0\u4EBA\n *\u63A5\u4E0B\u6765\u6211\u8981\u5F04\u4E00\u4E2A\u9634\u9633\u56FE\n *\u5148\u753B\u4E00\u4E2A\u5706\n**/\n#circle {\n    width:300px;\n    height:300px;\n    box-shadow:0 0 3px rgba(0,0,0,.5);\n    border-radius:50%;\n    left:50%;\n}\n/*\u63A5\u4E0B\u6765\u6211\u8BA9\u8BA9\u5706\u53D8\u6210\u9634\u9633\u4E24\u8272\n *\u7136\u540E\u8BA9\u8FD9\u4E2A\u5706\u53D8\u6210\u9634\u9633\u4EA4\u6C47\n *\u6700\u540E\u5728\u91CC\u9762\u7ED8\u5236\u9634\u9633\u773C\n**/\n#circle {\n    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n#circle::before {\n    content:'';\n    display:block;\n    width:150px;\n    height:150px;\n    background:black;\n    border-radius:50%;\n    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n}\n#circle::after {\n    content:'';\n    display:block;\n    width:150px;\n    height:150px;\n    background:white;\n    border-radius:50%;\n    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);\n}"; //加上注释让文字不会影响到body的样式
+var string = "\n/* \u4F60\u597D\uFF0C\u6211\u662F\u4E00\u540D\u524D\u7AEF\u65B0\u4EBA\n *\u63A5\u4E0B\u6765\u6211\u8981\u5F04\u4E00\u4E2A\u9634\u9633\u56FE\n *\u5148\u753B\u4E00\u4E2A\u5706\n**/\n#circle {\n    width:300px;\n    height:300px;\n    box-shadow:0 0 3px rgba(0,0,0,.5);\n    border-radius:50%;\n    left:50%;\n}\n/*\u63A5\u4E0B\u6765\u6211\u8BA9\u8BA9\u5706\u53D8\u6210\u9634\u9633\u4E24\u8272\n *\u7136\u540E\u8BA9\u8FD9\u4E2A\u5706\u53D8\u6210\u9634\u9633\u4EA4\u6C47\n *\u6700\u540E\u5728\u91CC\u9762\u7ED8\u5236\u9634\u9633\u773C\n**/\n#circle {\n    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n#circle::before {\n    content:'';\n    display:block;\n    width:150px;\n    height:150px;\n    background:black;\n    border-radius:50%;\n    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);\n}\n#circle::after {\n    content:'';\n    display:block;\n    width:150px;\n    height:150px;\n    background:white;\n    border-radius:50%;\n    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);\n}\n/*\u63A5\u4E0B\u6765\u6211\u8FD9\u4E2A\u592A\u6781\u52A8\u8D77\u6765\n**/\n#circle {\n    animation:10s ultimate infinite linear;\n}"; //加上注释让文字不会影响到body的样式
 var string2 = ''; //让string2等于一个空字符串
 var n = 0; //初始化n的值，下标为0
 
@@ -130,7 +130,7 @@ var word = function word() {
         if (n < string.length) {
             word(); //循环执行
         }
-    }, 10);
+    }, 50);
 };
 word();
 },{}],"D:\\Yarn\\Data\\global\\node_modules\\parcel\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
@@ -162,7 +162,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '62812' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '62423' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

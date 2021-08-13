@@ -36,6 +36,11 @@ let string =`
     background:white;
     border-radius:50%;
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+}
+/*接下来我这个太极动起来
+**/
+#circle {
+    animation:10s ultimate infinite linear;
 }`//加上注释让文字不会影响到body的样式
 let string2=''//让string2等于一个空字符串
 let n = 0 //初始化n的值，下标为0
@@ -64,7 +69,7 @@ let word = ()=>{
             word() ;//循环执行
         }
         
-    },10)
+    },50)
     
 }
 word()
